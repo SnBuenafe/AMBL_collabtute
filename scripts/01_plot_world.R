@@ -43,5 +43,6 @@ ggplot() +
   labs(title = "Australian States with Capital Cities") +
   theme_bw()
 
+#angela's chocolate obsession
 carmello_koala <- "gooey"
 
