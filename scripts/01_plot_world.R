@@ -26,3 +26,4 @@ ggplot() +
   theme_bw()
 
 carmello_koala <- "gooey"
+print(carmello_koala)
