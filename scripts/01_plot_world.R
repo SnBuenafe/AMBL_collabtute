@@ -22,7 +22,7 @@ ggplot() +
 
 # Plot the country
 ggplot() +
-  geom_sf(data = australia, fill = "grey64", color = "black") +
+  geom_sf(data = australia, fill = "blue", color = "black") +
   theme_bw()
 
 # Add Australian capital cities
