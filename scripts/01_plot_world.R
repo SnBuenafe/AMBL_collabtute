@@ -18,7 +18,9 @@ australia
 # Plot the world
 ggplot() +
   geom_sf(data = world, fill = "grey64", color = "black") +
-  theme_bw()
+  coord_sf(crs= "+proj=vandg4") +
+  theme_minimal() +
+  ggtitle("Beautiful world")
 
 # Plot the country
 ggplot() +
@@ -42,6 +44,7 @@ ggplot() +
   geom_text(data = aus_capitals, aes(x = lon, y = lat, label = city),
             nudge_y = -0.5, size = 3) +
   labs(title = "Australian States with Capital Cities") +
+  ggtitle("Big island") +
   theme_bw()
 
 carmello_koala <- "gooey"
