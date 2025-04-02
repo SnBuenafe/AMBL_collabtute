@@ -42,3 +42,6 @@ ggplot() +
             nudge_y = -0.5, size = 3) +
   labs(title = "Australian States with Capital Cities") +
   theme_bw()
+
+carmello_koala <- "gooey"
+
