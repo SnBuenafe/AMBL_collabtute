@@ -25,5 +25,6 @@ ggplot() +
   geom_sf(data = australia, fill = "grey64", color = "black") +
   theme_bw()
 
+#angela's chocolate obsession
 carmello_koala <- "gooey"
 print(carmello_koala)
