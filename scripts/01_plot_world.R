@@ -17,12 +17,16 @@ australia
 
 # Plot the world
 ggplot() +
-  geom_sf(data = world, fill = "grey64", color = "black") +
+  geom_sf(data = world, aes(fill = income_grp), color = "black") +
+  coord_sf(xlim = st_bbox(australia)$xlim, ylim = st_bbox(australia)$ylim) +
+  scale_fill_brewer(palette = "YlOrRd") +
   theme_bw()
 
 # Plot the country
 ggplot() +
-  geom_sf(data = australia, fill = "grey64", color = "black") +
+  geom_sf(data = australia, aes(fill = name), color = "black") +
+  scale_fill_brewer(palette = "Paired") +
+  coord_sf(xlim = c(110, 155), ylim = c(-10, -45)) +
   theme_bw()
 
 carmello_koala <- "gooey"
