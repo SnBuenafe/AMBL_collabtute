@@ -36,6 +36,7 @@ aus_capitals <- data.frame(
 # Plot Australia with capital cities as stars
 ggplot() +
   geom_sf(data = australia, fill = "grey64", color = "black") +
+  ggtitle("AvoToastSucks") +
   geom_point(data = aus_capitals, aes(x = lon, y = lat),
              shape = 8, size = 3, color = "red") +  # Shape 8 is a star
   geom_text(data = aus_capitals, aes(x = lon, y = lat, label = city),
