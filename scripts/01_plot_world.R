@@ -23,4 +23,5 @@ ggplot() +
 # Plot the country
 ggplot() +
   geom_sf(data = australia, fill = "grey64", color = "black") +
+  ggtitle("AvoToastSucks")
   theme_bw()
