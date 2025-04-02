@@ -24,5 +24,3 @@ ggplot() +
 ggplot() +
   geom_sf(data = australia, fill = "grey64", color = "black") +
   theme_bw()
-
-fdjkajckldamfklda
